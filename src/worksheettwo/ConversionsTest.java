@@ -38,5 +38,13 @@ public class ConversionsTest {
         assertEquals("0", c.integerToString(0));
         assertEquals("-5", c.integerToString(-5));
     }
+    @Test
+    void testSwitchCase() {
+        Conversions c = new Conversions();
+
+        assertEquals("hello", c.switchCase("HELLO"));
+        assertEquals("HELLO", c.switchCase("hello"));
+        assertEquals("hELLO", c.switchCase("Hello"));
+    }
 
 }
