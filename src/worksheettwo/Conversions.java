@@ -12,7 +12,7 @@ public class Conversions {
     }
 
     public int stringToInteger(String val) {
-        return 0;
+        return Integer.parseInt(val);
     }
 
     public String integerToString(int val) {
